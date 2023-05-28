@@ -118,7 +118,6 @@ struct PomodoroTimerView: View {
             }
             .animation(.easeInOut, value: pomodoroModel.addNewTimer)
         })
-        .preferredColorScheme(.dark)
         .onReceive(Timer.publish(every: 1, on: .main, in: .common).autoconnect()) { _ in
             
             if pomodoroModel.isStarted {
@@ -127,6 +126,7 @@ struct PomodoroTimerView: View {
             
         }
         .alert("Time's up! Your timer has finished.", isPresented: $pomodoroModel.isFinished) {
+            
             Button("Start New ", role: .cancel) {
                 pomodoroModel.startTimer()
                 pomodoroModel.addNewTimer = true
