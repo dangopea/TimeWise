@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>932961941298-blrqumkc77170r9h24p6efk402m2nioa.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.932961941298-blrqumkc77170r9h24p6efk402m2nioa</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBOI24H_zu_4IvzuS1mBT88dVDF0fI150E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>932961941298</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dangodot.TimeWise</string>
+	<key>PROJECT_ID</key>
+	<string>timewiseloginfeature</string>
+	<key>STORAGE_BUCKET</key>
+	<string>timewiseloginfeature.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:932961941298:ios:9956a98686b895db38892b</string>
+	<key>DATABASE_URL</key>
+	<string>https://timewiseloginfeature-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

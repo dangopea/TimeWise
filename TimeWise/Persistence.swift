@@ -2,7 +2,7 @@
 //  Persistence.swift
 //  TimeWise
 //
-//  Created by Dhriti on 21/05/2566 BE.
+//  Created by Dhriti on 4/22/2566 BE.
 //
 
 import CoreData
@@ -13,10 +13,6 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-        }
         do {
             try viewContext.save()
         } catch {
