@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct HomeView: View {
     @EnvironmentObject var sessionService: SessionServiceImpl
     @EnvironmentObject var pomodoroModel: PomodoroModel
     @Environment(\.presentationMode) var presentationMode
+    
+    let persistenceController = PersistenceController.shared
 
     var body: some View {
         NavigationView {
@@ -38,11 +41,26 @@ struct HomeView: View {
                             
                         }
                         Spacer()
-                        Spacer()
+                        
+                        NavigationLink(
+                            destination: HabitTrackerView()
+                                .environment(\.managedObjectContext,
+                                              persistenceController.container.viewContext)
+                        ) {
+                            Text("Open Habit Tracker")
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.white)
+                                .padding()
+                                .background(Color("Green"))
+                                .cornerRadius(10)
+                                .padding(.horizontal, 20)
+                            
+                        }
                         Spacer()
                         Spacer()
                     }
-                )
+                ) 
         }
     }
 }
