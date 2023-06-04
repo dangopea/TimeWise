@@ -14,14 +14,15 @@ struct TimeWiseApp: App {
     
     let persistenceController = PersistenceController.shared
     let notificationHandler = NotificationHandler()
+
     
     @StateObject var pomodoroModel: PomodoroModel = .init()
     
-
     @UIApplicationDelegateAdaptor(Delegate.self) var delegate
     
     init() {
         notificationHandler.askPermission()
+        notificationHandler.checkNotificationAccess()
     }
 
     var body: some Scene {
@@ -32,8 +33,7 @@ struct TimeWiseApp: App {
     }
 }
 
-//Initializing FireBase
-
+// Initializing FireBase
 class Delegate: NSObject, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
@@ -41,4 +41,3 @@ class Delegate: NSObject, UIApplicationDelegate {
         return true
     }
 }
-

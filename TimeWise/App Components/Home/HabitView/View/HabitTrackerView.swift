@@ -11,7 +11,6 @@ import CoreData
 struct HabitTrackerView: View {
     var body: some View {
         HabitView()
-            .preferredColorScheme(.dark)
     }
 }
 

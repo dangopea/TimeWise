@@ -8,13 +8,23 @@
 import Foundation
 import UserNotifications
 
-class NotificationHandler {
+class NotificationHandler: ObservableObject {
+    @Published var notificationAccess: Bool = false
+    
+    
+    func checkNotificationAccess() {
+        UNUserNotificationCenter.current().getNotificationSettings { settings in
+            DispatchQueue.main.async {
+                self.notificationAccess = settings.authorizationStatus == .authorized
+            }
+        }
+    }
     
     func askPermission() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
-
             if success {
                 print("Access Granted!")
+                self.notificationAccess = true
             } else if let error = error {
                 print(error.localizedDescription)
             }

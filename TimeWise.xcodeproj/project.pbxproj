@@ -216,10 +216,10 @@
 		FEA29D642A19E74B006E9A2F /* TimeWise */ = {
 			isa = PBXGroup;
 			children = (
-				FE4FBB5D2A2C5DD20036FC98 /* Modifiers */,
 				FEA29D652A19E74B006E9A2F /* TimeWiseApp.swift */,
 				FEA29D7A2A19E7E2006E9A2F /* SplashScreenView.swift */,
 				FEA29D672A19E74B006E9A2F /* ContentView.swift */,
+				FE4FBB5D2A2C5DD20036FC98 /* Modifiers */,
 				FEA29D7C2A19E7FC006E9A2F /* Handlers */,
 				FEA29D7F2A19E817006E9A2F /* App Components */,
 				FEA29D6E2A19E74E006E9A2F /* Persistence.swift */,

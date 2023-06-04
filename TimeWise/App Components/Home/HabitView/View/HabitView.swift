@@ -31,7 +31,7 @@ struct HabitView: View {
                         } label: {
                             Image(systemName: "gearshape")
                                 .font(.title3)
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                         }
                     }
                     .padding(.bottom, 10)
@@ -55,7 +55,7 @@ struct HabitView: View {
                                 Image(systemName: "plus.circle")
                             }
                             .font(.callout.bold())
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                         }
                         .padding(.top, 15)
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)

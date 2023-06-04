@@ -24,8 +24,7 @@ struct AddNewHabit: View {
                 TextField("Title", text: $habitModel.title)
                     .padding(.horizontal)
                     .padding(.vertical, 10)
-                    .background(Color("TFBG"), in: RoundedRectangle(cornerRadius: 6,
-                                                                    style: .continuous))
+                    .background(Color(""), in: RoundedRectangle(cornerRadius: 6,style: .continuous))
                     
                 //MARK: Habit Color Picker
                 HStack(spacing: 0) {
@@ -167,7 +166,7 @@ struct AddNewHabit: View {
                             }
                         }
                     }
-                    .tint(.white)
+                    .tint(.black)
                     .disabled(!habitModel.doneStatus())
                     .opacity(habitModel.doneStatus() ? 1 : 0.6)
                 }
@@ -206,6 +205,5 @@ struct AddNewHabit_Previews: PreviewProvider {
     static var previews: some View {
         AddNewHabit()
             .environmentObject(HabitViewModel())
-            .preferredColorScheme(.dark)
     }
 }
