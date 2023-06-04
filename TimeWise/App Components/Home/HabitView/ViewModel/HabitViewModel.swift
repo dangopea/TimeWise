@@ -39,7 +39,8 @@ class HabitViewModel: ObservableObject {
             UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: (editHabit.notificationIDs ?? [] as NSObject) as! [String])
             
         } else {
-            let habit = Habit(context: context)
+            habit = Habit(context: context)
+
         }
         
         habit.title = title
