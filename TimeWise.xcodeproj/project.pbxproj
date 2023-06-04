@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE7875ED2A2C2DA0007B608A /* HabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7875EC2A2C2DA0007B608A /* HabitViewModel.swift */; };
-		FE7875EF2A2C2DB5007B608A /* AddNewHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7875EE2A2C2DB5007B608A /* AddNewHabit.swift */; };
-		FE7875F12A2C2DCA007B608A /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7875F02A2C2DCA007B608A /* HabitView.swift */; };
-		FE7875F32A2C3069007B608A /* HabitTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7875F22A2C3069007B608A /* HabitTrackerView.swift */; };
+		FE7875F52A2C3A34007B608A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7875F42A2C3A34007B608A /* HomeView.swift */; };
+		FE7875F72A2C3A58007B608A /* AddNewHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7875F62A2C3A58007B608A /* AddNewHabit.swift */; };
+		FE7875F92A2C3A6A007B608A /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7875F82A2C3A6A007B608A /* HabitView.swift */; };
+		FE7875FB2A2C3A7A007B608A /* HabitTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7875FA2A2C3A7A007B608A /* HabitTrackerView.swift */; };
+		FE7875FD2A2C3A90007B608A /* HabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7875FC2A2C3A90007B608A /* HabitViewModel.swift */; };
 		FE80AA3B2A1B155B00592257 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE80AA3A2A1B155B00592257 /* BannerView.swift */; };
 		FE80AA3D2A1B156000592257 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE80AA3C2A1B156000592257 /* ProfileView.swift */; };
 		FE80AA402A1FC83E00592257 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FE80AA3F2A1FC83E00592257 /* FirebaseFirestore */; };
@@ -25,7 +26,6 @@
 		FEA29D722A19E74E006E9A2F /* TimeWise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEA29D702A19E74E006E9A2F /* TimeWise.xcdatamodeld */; };
 		FEA29D7B2A19E7E2006E9A2F /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA29D7A2A19E7E2006E9A2F /* SplashScreenView.swift */; };
 		FEA29D7E2A19E80D006E9A2F /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA29D7D2A19E80D006E9A2F /* NotificationHandler.swift */; };
-		FEA29D862A19E8A9006E9A2F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA29D852A19E8A9006E9A2F /* HomeView.swift */; };
 		FEA29D882A19E8BD006E9A2F /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA29D872A19E8BD006E9A2F /* ProgressView.swift */; };
 		FEA29D8A2A19E8DC006E9A2F /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA29D892A19E8DC006E9A2F /* TaskListView.swift */; };
 		FEA29D8C2A19E8E7006E9A2F /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA29D8B2A19E8E7006E9A2F /* TaskCell.swift */; };
@@ -65,10 +65,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE7875EC2A2C2DA0007B608A /* HabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewModel.swift; sourceTree = "<group>"; };
-		FE7875EE2A2C2DB5007B608A /* AddNewHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewHabit.swift; sourceTree = "<group>"; };
-		FE7875F02A2C2DCA007B608A /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
-		FE7875F22A2C3069007B608A /* HabitTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerView.swift; sourceTree = "<group>"; };
+		FE7875F42A2C3A34007B608A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FE7875F62A2C3A58007B608A /* AddNewHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewHabit.swift; sourceTree = "<group>"; };
+		FE7875F82A2C3A6A007B608A /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
+		FE7875FA2A2C3A7A007B608A /* HabitTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerView.swift; sourceTree = "<group>"; };
+		FE7875FC2A2C3A90007B608A /* HabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewModel.swift; sourceTree = "<group>"; };
 		FE80AA3A2A1B155B00592257 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		FE80AA3C2A1B156000592257 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		FE80AA8A2A23160D00592257 /* PomodoroTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerView.swift; sourceTree = "<group>"; };
@@ -84,7 +85,6 @@
 		FEA29D732A19E74E006E9A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEA29D7A2A19E7E2006E9A2F /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		FEA29D7D2A19E80D006E9A2F /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
-		FEA29D852A19E8A9006E9A2F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = "TimeWise/App Components/Home/HomeView.swift"; sourceTree = SOURCE_ROOT; };
 		FEA29D872A19E8BD006E9A2F /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		FEA29D892A19E8DC006E9A2F /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		FEA29D8B2A19E8E7006E9A2F /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		FE7875EA2A2C2D81007B608A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				FE7875EC2A2C2DA0007B608A /* HabitViewModel.swift */,
+				FE7875FC2A2C3A90007B608A /* HabitViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -155,9 +155,9 @@
 		FE7875EB2A2C2D8D007B608A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FE7875F22A2C3069007B608A /* HabitTrackerView.swift */,
-				FE7875F02A2C2DCA007B608A /* HabitView.swift */,
-				FE7875EE2A2C2DB5007B608A /* AddNewHabit.swift */,
+				FE7875F82A2C3A6A007B608A /* HabitView.swift */,
+				FE7875F62A2C3A58007B608A /* AddNewHabit.swift */,
+				FE7875FA2A2C3A7A007B608A /* HabitTrackerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,8 +165,8 @@
 		FE80AA392A1B105600592257 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FE7875F42A2C3A34007B608A /* HomeView.swift */,
 				FE80AA892A2315F700592257 /* PomodoroTimer */,
-				FEA29D852A19E8A9006E9A2F /* HomeView.swift */,
 				FE7875E92A2C2D65007B608A /* HabitView */,
 			);
 			path = Home;
@@ -495,16 +495,15 @@
 				FEA29DD52A19F64B006E9A2F /* RegisterView.swift in Sources */,
 				FE80AA8F2A231A9400592257 /* PomoView.swift in Sources */,
 				FE80AA3B2A1B155B00592257 /* BannerView.swift in Sources */,
+				FE7875F92A2C3A6A007B608A /* HabitView.swift in Sources */,
 				FEA29DC72A19F59F006E9A2F /* SessionUserDetails.swift in Sources */,
 				FEA29D722A19E74E006E9A2F /* TimeWise.xcdatamodeld in Sources */,
 				FEA29DA22A19EA02006E9A2F /* ImageView.swift in Sources */,
 				FEA29DBF2A19F400006E9A2F /* ButtonView.swift in Sources */,
-				FEA29D862A19E8A9006E9A2F /* HomeView.swift in Sources */,
-				FE7875F32A2C3069007B608A /* HabitTrackerView.swift in Sources */,
+				FE7875FB2A2C3A7A007B608A /* HabitTrackerView.swift in Sources */,
 				FEA29D8A2A19E8DC006E9A2F /* TaskListView.swift in Sources */,
 				FEA29DA02A19E9F6006E9A2F /* ImagePicker.swift in Sources */,
 				FEA29D7E2A19E80D006E9A2F /* NotificationHandler.swift in Sources */,
-				FE7875ED2A2C2DA0007B608A /* HabitViewModel.swift in Sources */,
 				FE80AA8D2A2317CF00592257 /* PomodoroModel.swift in Sources */,
 				FEA29D9B2A19E9B8006E9A2F /* AccountView.swift in Sources */,
 				FE80AA8B2A23160D00592257 /* PomodoroTimerView.swift in Sources */,
@@ -518,19 +517,20 @@
 				FEA29DD12A19F61C006E9A2F /* RegistrationService.swift in Sources */,
 				FEA29D992A19E97F006E9A2F /* DateHolder.swift in Sources */,
 				FEA29D9D2A19E9E0006E9A2F /* ContactUsView.swift in Sources */,
-				FE7875EF2A2C2DB5007B608A /* AddNewHabit.swift in Sources */,
 				FEA29DC92A19F5B8006E9A2F /* ForgotPasswordViewModel.swift in Sources */,
 				FEA29D8F2A19E8F8006E9A2F /* TaskEditView.swift in Sources */,
 				FEA29D882A19E8BD006E9A2F /* ProgressView.swift in Sources */,
 				FEA29D972A19E971006E9A2F /* TaskItemExtension.swift in Sources */,
+				FE7875FD2A2C3A90007B608A /* HabitViewModel.swift in Sources */,
 				FEA29DD32A19F635006E9A2F /* RegistrationDetails.swift in Sources */,
 				FEA29DBB2A19F3C7006E9A2F /* InputTextFieldView.swift in Sources */,
 				FEA29D932A19E910006E9A2F /* CheckBoxView.swift in Sources */,
 				FEA29D682A19E74B006E9A2F /* ContentView.swift in Sources */,
+				FE7875F72A2C3A58007B608A /* AddNewHabit.swift in Sources */,
+				FE7875F52A2C3A34007B608A /* HomeView.swift in Sources */,
 				FEA29DD92A19F67A006E9A2F /* LoginService.swift in Sources */,
 				FEA29DB72A19F2F6006E9A2F /* PreviewLayoutComponentModifier.swift in Sources */,
 				FEA29DB92A19F3B1006E9A2F /* CloseViewModifier.swift in Sources */,
-				FE7875F12A2C2DCA007B608A /* HabitView.swift in Sources */,
 				FEA29DCF2A19F606006E9A2F /* RegistrationViewModel.swift in Sources */,
 				FEA29DBD2A19F3F1006E9A2F /* InputPasswordView.swift in Sources */,
 				FEA29D662A19E74B006E9A2F /* TimeWiseApp.swift in Sources */,

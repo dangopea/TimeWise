@@ -164,7 +164,7 @@ class HabitViewModel: ObservableObject {
         if let editHabit = editHabit {
             title = editHabit.title ?? ""
             habitColor = editHabit.color ?? "Card-1"
-            weekDays = editHabit.weekDays ?? []
+            weekDays = editHabit.weekDays as? [String] ?? []
            isReminderOn = editHabit.isReminderOn
             reminderDate = editHabit.notificationDate ?? Date()
             reminderText = editHabit.reminderText ?? ""

@@ -96,7 +96,7 @@ struct HabitView: View {
                 
                 Spacer()
                 
-                let count = (habit.weekDays?.count ?? 0)
+                let count = (habit.weekDays as? [String])?.count ?? 0
                 Text(count == 7 ? "Everyday" : "\(count) times a week")
                     .font(.caption)
                     .foregroundColor(.gray)
@@ -108,7 +108,7 @@ struct HabitView: View {
             let currentWeek = calendar.dateInterval(of: .weekOfMonth, for: Date())
             let symbols = calendar.weekdaySymbols
             let startDate = currentWeek?.start ?? Date()
-            let activeWeekDays = habit.weekDays ?? []
+            let activeWeekDays = habit.weekDays as? [String] ?? []
             let activePlot = symbols.indices.compactMap { index -> (String, Date) in
                 let currentDate = calendar.date(byAdding: .day, value: index, to: startDate)
                 return (symbols[index], currentDate!)
