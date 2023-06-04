@@ -135,6 +135,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE4FBB5D2A2C5DD20036FC98 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		FE7875E92A2C2D65007B608A /* HabitView */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +216,7 @@
 		FEA29D642A19E74B006E9A2F /* TimeWise */ = {
 			isa = PBXGroup;
 			children = (
+				FE4FBB5D2A2C5DD20036FC98 /* Modifiers */,
 				FEA29D652A19E74B006E9A2F /* TimeWiseApp.swift */,
 				FEA29D7A2A19E7E2006E9A2F /* SplashScreenView.swift */,
 				FEA29D672A19E74B006E9A2F /* ContentView.swift */,

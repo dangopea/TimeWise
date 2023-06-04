@@ -19,62 +19,63 @@ struct HabitView: View {
     @StateObject var habitModel: HabitViewModel = .init()
     
     var body: some View {
-        
-        VStack(spacing: 0) {
-            
-            Text("Habits")
-                .font(.title2.bold())
-                .frame(maxWidth: .infinity)
-                .overlay (alignment: .trailing){
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "gearshape")
-                            .font(.title3)
-                            .foregroundColor(.white)
-                    }
-                }
-                .padding(.bottom, 10)
-            
-            //MAKING ADD BUTTON CENTER WHEN HABITS EMPTY
-            
-            ScrollView(habits.isEmpty ? .init() : .vertical, showsIndicators: false) {
-                VStack (spacing: 15) {
-                    
-                    ForEach(habits) { habit in
-                        HabitCardView(habit: habit)
-                    }
-                    
-                    //MARK: Add habit button
-                    Button {
-                        habitModel.addNewHabit.toggle()
-                    } label: {
-                        Label {
-                            Text("New Habit")
-                        } icon: {
-                            Image(systemName: "plus.circle")
+        ZStack {
+            VStack(spacing: 0) {
+                
+                Text("Habits")
+                    .font(.title2.bold())
+                    .frame(maxWidth: .infinity)
+                    .overlay (alignment: .trailing){
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "gearshape")
+                                .font(.title3)
+                                .foregroundColor(.white)
                         }
-                        .font(.callout.bold())
-                        .foregroundColor(.white)
                     }
-                    .padding(.top, 15)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                    .padding(.bottom, 10)
+                
+                //MAKING ADD BUTTON CENTER WHEN HABITS EMPTY
+                
+                ScrollView(habits.isEmpty ? .init() : .vertical, showsIndicators: false) {
+                    VStack (spacing: 15) {
+                        
+                        ForEach(habits) { habit in
+                            HabitCardView(habit: habit)
+                        }
+                        
+                        //MARK: Add habit button
+                        Button {
+                            habitModel.addNewHabit.toggle()
+                        } label: {
+                            Label {
+                                Text("New Habit")
+                            } icon: {
+                                Image(systemName: "plus.circle")
+                            }
+                            .font(.callout.bold())
+                            .foregroundColor(.white)
+                        }
+                        .padding(.top, 15)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                    }
+                    .padding(.vertical)
                 }
-                .padding(.vertical)
+            }
+            .frame(maxHeight: .infinity, alignment: .top)
+            .padding()
+            .sheet(isPresented: $habitModel.addNewHabit) {
+                //MARK: Erasing all existing content
+                habitModel.resetData()
+            } content: {
+                AddNewHabit()
+                    .environmentObject(habitModel)
             }
         }
-        .frame(maxHeight: .infinity, alignment: .top)
-        .padding()
-        .sheet(isPresented: $habitModel.addNewHabit) {
-            
-            //MARK: Erasing all existing content
-            habitModel.resetData()
-            
-        } content: {
-            AddNewHabit()
-                .environmentObject(habitModel)
-        }
+        
     }
+        
     
     //MARK: Habit Card View
     
@@ -157,6 +158,7 @@ struct HabitView: View {
             habitModel.addNewHabit.toggle()
         }
     }
+        
     
     //MARK: Formatting Date
     
