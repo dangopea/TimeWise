@@ -155,9 +155,9 @@
 		FE7875EB2A2C2D8D007B608A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FE7875FA2A2C3A7A007B608A /* HabitTrackerView.swift */,
 				FE7875F82A2C3A6A007B608A /* HabitView.swift */,
 				FE7875F62A2C3A58007B608A /* AddNewHabit.swift */,
-				FE7875FA2A2C3A7A007B608A /* HabitTrackerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
