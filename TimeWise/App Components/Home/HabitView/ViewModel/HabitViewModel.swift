@@ -40,7 +40,6 @@ class HabitViewModel: ObservableObject {
             
         } else {
             habit = Habit(context: context)
-
         }
         
         habit.title = title
