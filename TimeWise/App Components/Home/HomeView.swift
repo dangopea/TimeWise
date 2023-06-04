@@ -40,7 +40,6 @@ struct HomeView: View {
                                 .padding(.horizontal, 20)
                             
                         }
-                        Spacer()
                         
                         NavigationLink(
                             destination: HabitTrackerView()
@@ -57,7 +56,23 @@ struct HomeView: View {
                                 .padding(.horizontal, 20)
                             
                         }
-                        Spacer()
+                        
+                        NavigationLink(
+                            destination: NotesView()
+                                .environment(\.managedObjectContext,
+                                              persistenceController.container.viewContext)
+                        ) {
+                            Text("Open Notes")
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.white)
+                                .padding()
+                                .background(Color("Green"))
+                                .cornerRadius(10)
+                                .padding(.horizontal, 20)
+                            
+                        }
+                        
                         Spacer()
                     }
                 )
